@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tainwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-11/12 mx-auto">
+    <header>
+        <nav class="flex justify-between mt-3 border-b pb-5">
+            <div class="logo"><img src="./assets/Logo.png" alt=""></div>
+            <div class="mid">
+                <label class="input input-bordered flex items-center gap-2">
+                    <input type="text" class="grow" placeholder="Search" onkeyup="loadVidOnKeyUp(event)" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="h-4 w-4 opacity-70">
+                      <path
+                        fill-rule="evenodd"
+                        d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </label>
+            </div>
+            <div class="button">
+                <button class="btn bg-red-500 text-white">Blog</button>
+            </div>
+        </nav>
+
+        <div id="category-btn-div" class="flex justify-center mt-3 gap-3">
+        </div>
+    </header>
+    <main>
+        <div id="show-videos" class="grid grid-cols-4 gap-4 my-4 justify-center items-center">
+            
+            <!-- <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                <figure class="relative">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes" />
+                    
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Building a Winning UX Strategy Using the Kano Model</h2>
+                  <p>Awlad Hossain <svg class="w-5 inline" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"   viewBox="0 0 30 30"
+                    style="fill:#228BE6;">
+                        <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21.707,12.707l-7.56,7.56 c-0.188,0.188-0.442,0.293-0.707,0.293s-0.52-0.105-0.707-0.293l-3.453-3.453c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0 l2.746,2.746l6.853-6.853c0.391-0.391,1.023-0.391,1.414,0S22.098,12.316,21.707,12.707z"></path>
+                    </svg></p>
+                  <p>91K views</p>
+                </div>
+              </div> -->
+
+              
+        </div>
+    </main>
+    <footer></footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
